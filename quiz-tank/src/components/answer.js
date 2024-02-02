@@ -1,12 +1,12 @@
 import React from "react";
 
-const Answer = ({ answer, onSelect, isCorrect }) => {
+const Answer = ({ text, onSelect, isCorrect }) => {
   return (
     <div
       className={`answer ${isCorrect ? "correct" : "incorrect"}`}
       onClick={() => onSelect(isCorrect)}
     >
-      <p>{answer}</p>
+      <p>{text}</p>
     </div>
   );
 };
