@@ -1,7 +1,7 @@
 [
     {
       "question": "What is the capital of France?",
-      "options": [
+      "answers": [
         { "text": "Berlin", "isCorrect": false },
         { "text": "Paris", "isCorrect": true },
         { "text": "Madrid", "isCorrect": false },
@@ -10,7 +10,7 @@
     },
     {
         "question": "What is the capital of Germany?",
-        "options": [
+        "answers": [
             { "text": "Berlin", "isCorrect": true },
             { "text": "Paris", "isCorrect": false },
             { "text": "Madrid", "isCorrect": false },
@@ -19,7 +19,7 @@
     },
     {
         "question": "What is the capital of Spain?",
-        "options": [
+        "answers": [
             { "text": "Berlin", "isCorrect": false },
             { "text": "Paris", "isCorrect": false },
             { "text": "Madrid", "isCorrect": true },
@@ -28,7 +28,7 @@
     },
     {
         "question": "What is the capital of Italy?",
-        "options": [
+        "answers": [
             { "text": "Berlin", "isCorrect": false },
             { "text": "Paris", "isCorrect": false },
             { "text": "Madrid", "isCorrect": false },
