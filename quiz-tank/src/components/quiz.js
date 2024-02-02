@@ -6,12 +6,17 @@ import data from "../data/questions.json";
 const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
+  const [showCorrectAnswer, setShowCorrectAnswer] = useState(false);
 
   const handleAnswer = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
     }
-    nextQuestion();
+    setShowCorrectAnswer(true);
+    setTimeout(() => {
+      setShowCorrectAnswer(false);
+      nextQuestion();
+    }, 60000); // 1 minute delay
   };
 
   const nextQuestion = () => {
@@ -37,6 +42,7 @@ const Quiz = () => {
             text={option.text}
             isCorrect={option.isCorrect}
             onSelect={handleAnswer}
+            showCorrectAnswer={showCorrectAnswer}
           />
         ))}
       </div>
