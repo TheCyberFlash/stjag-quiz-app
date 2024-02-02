@@ -1,6 +1,6 @@
-import React from 'react';
-import Quiz from './components/quiz';
-import './App.css';
+import React from "react";
+import Quiz from "./components/quiz";
+import "./App.css";
 
 function App() {
   return (
