@@ -16,7 +16,7 @@ const Quiz = () => {
     setTimeout(() => {
       setShowCorrectAnswer(false);
       nextQuestion();
-    }, 60000); // 1 minute delay
+    }, 600); 
   };
 
   const nextQuestion = () => {
