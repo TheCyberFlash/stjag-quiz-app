@@ -2,9 +2,9 @@ import React from 'react';
 
 const Question = ({ question }) => {
     return (
-        <div>
-        <h3>{question}</h3>
-        </div>
+        <div className="question">
+        <h2>{question}</h2>
+      </div>
     );
     };
 
