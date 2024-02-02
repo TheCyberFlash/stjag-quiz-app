@@ -28,12 +28,14 @@ const Quiz = () => {
     }, []);
 
     return (
-        <div>
-            <Question question={data[currentQuestion].question} />
-            {data[currentQuestion].answers.map((answer, index) => (
-                <Answer key={index} answer={answer.text} isCorrect={answer.isCorrect} onSelect={handleAnswer} />
-            ))}
-        </div>
+<div className="quiz">
+      <Question text={data[currentQuestion].question} />
+      <div className="answers">
+        {data[currentQuestion].options.map((option, index) => (
+          <Answer key={index} text={option.text} isCorrect={option.isCorrect} onSelect={handleAnswer} />
+        ))}
+      </div>
+    </div>
     );
 
 };
