@@ -1,0 +1,39 @@
+[
+    {
+      "question": "What is the capital of France?",
+      "options": [
+        { "text": "Berlin", "isCorrect": false },
+        { "text": "Paris", "isCorrect": true },
+        { "text": "Madrid", "isCorrect": false },
+        { "text": "Rome", "isCorrect": false }
+      ]
+    },
+    {
+        "question": "What is the capital of Germany?",
+        "options": [
+            { "text": "Berlin", "isCorrect": true },
+            { "text": "Paris", "isCorrect": false },
+            { "text": "Madrid", "isCorrect": false },
+            { "text": "Rome", "isCorrect": false }
+        ]
+    },
+    {
+        "question": "What is the capital of Spain?",
+        "options": [
+            { "text": "Berlin", "isCorrect": false },
+            { "text": "Paris", "isCorrect": false },
+            { "text": "Madrid", "isCorrect": true },
+            { "text": "Rome", "isCorrect": false }
+        ]
+    },
+    {
+        "question": "What is the capital of Italy?",
+        "options": [
+            { "text": "Berlin", "isCorrect": false },
+            { "text": "Paris", "isCorrect": false },
+            { "text": "Madrid", "isCorrect": false },
+            { "text": "Rome", "isCorrect": true }
+        ]
+    }
+  ]
+  
