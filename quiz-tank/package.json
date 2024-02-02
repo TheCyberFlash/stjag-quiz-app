@@ -1,5 +1,6 @@
 {
   "name": "quiz-tank",
+  "homepage": "https://thecyberflash.github.io/stjag-quiz-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
