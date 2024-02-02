@@ -1,9 +1,9 @@
 import React from "react";
 
-const Question = ({ question }) => {
+const Question = ({ text }) => {
   return (
     <div className="question">
-      <h2>{question}</h2>
+      <h2>{text}</h2>
     </div>
   );
 };
