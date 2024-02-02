@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/stjag-quiz-app/static/css/main.f855e6bc.css",
-    "main.js": "/stjag-quiz-app/static/js/main.5e30db96.js",
+    "main.css": "/stjag-quiz-app/static/css/main.106d04b9.css",
+    "main.js": "/stjag-quiz-app/static/js/main.9210b8d4.js",
     "static/js/787.334fbfd9.chunk.js": "/stjag-quiz-app/static/js/787.334fbfd9.chunk.js",
-    "static/media/logo.svg": "/stjag-quiz-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/stjag-quiz-app/index.html",
-    "main.f855e6bc.css.map": "/stjag-quiz-app/static/css/main.f855e6bc.css.map",
-    "main.5e30db96.js.map": "/stjag-quiz-app/static/js/main.5e30db96.js.map",
+    "main.106d04b9.css.map": "/stjag-quiz-app/static/css/main.106d04b9.css.map",
+    "main.9210b8d4.js.map": "/stjag-quiz-app/static/js/main.9210b8d4.js.map",
     "787.334fbfd9.chunk.js.map": "/stjag-quiz-app/static/js/787.334fbfd9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.5e30db96.js"
+    "static/css/main.106d04b9.css",
+    "static/js/main.9210b8d4.js"
   ]
 }
