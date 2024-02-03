@@ -26,7 +26,7 @@ const Quiz = () => {
     if (currentQuestion < data.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      alert("Quiz finished! Your score is: " + score);
+      alert("Quiz finished! Your score is: " + updatedScore);
       resetQuiz();
     }
   };
