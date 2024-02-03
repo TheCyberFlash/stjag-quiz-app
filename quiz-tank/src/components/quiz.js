@@ -16,16 +16,16 @@ const Quiz = () => {
 
       return updatedScore;
     });
-
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        setShowCorrectAnswer(false);
-        nextQuestion();
-      }, 600);
-
-      return () => clearTimeout(timer);
-    }, [score]);
   };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowCorrectAnswer(false);
+      nextQuestion();
+    }, 600);
+
+    return () => clearTimeout(timer);
+  }, [score]);
 
   const nextQuestion = () => {
     setShowCorrectAnswer(false);
