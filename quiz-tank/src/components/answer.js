@@ -18,7 +18,9 @@ const Answer = ({ text, onSelect, isCorrect, showCorrectAnswer }) => {
 
   return (
     <div
-      className={`answer ${selected ? (isCorrect ? "correct" : "incorrect") : ""}`}
+      className={`answer ${
+        selected ? (isCorrect ? "correct" : "incorrect") : ""
+      }`}
       onClick={handleClick}
     >
       <p>{text}</p>
