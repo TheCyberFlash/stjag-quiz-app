@@ -2,7 +2,12 @@ import React, { useState, useEffect } from "react";
 
 const Answer = ({ text, onSelect, isCorrect, showCorrectAnswer }) => {
   const [selected, setSelected] = useState(false);
-  const [clickedNextQuestion, setClickedNextQuestion] = useState(false);
+
+  useEffect(() => {
+    if (!showCorrectAnswer) {
+      setSelected(false);
+    }
+  }, [showCorrectAnswer]);
 
   const handleClick = () => {
     if (!selected) {
@@ -10,13 +15,6 @@ const Answer = ({ text, onSelect, isCorrect, showCorrectAnswer }) => {
       onSelect(isCorrect);
     }
   };
-
-  useEffect(() => {
-    if (clickedNextQuestion && showCorrectAnswer) {
-      setSelected(false);
-      setClickedNextQuestion(false);
-    }
-  }, [clickedNextQuestion, showCorrectAnswer]);
 
   return (
     <div
