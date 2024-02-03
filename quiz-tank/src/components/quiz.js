@@ -7,32 +7,26 @@ const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showCorrectAnswer, setShowCorrectAnswer] = useState(false);
+  let updatedScore = score;
 
   const handleAnswer = (isCorrect) => {
-    setScore((prevScore) => {
-      const updatedScore = isCorrect ? prevScore + 1 : prevScore;
-      console.log(updatedScore);
-      setShowCorrectAnswer(true);
-
-      return updatedScore;
-    });
-  };
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
+    updatedScore = isCorrect ? score + 1 : score;
+    setScore(updatedScore);
+    console.log(updatedScore);
+    setShowCorrectAnswer(true);
+  
+    setTimeout(() => {
       setShowCorrectAnswer(false);
       nextQuestion();
     }, 600);
-
-    return () => clearTimeout(timer);
-  }, [score]);
+  };  
 
   const nextQuestion = () => {
     setShowCorrectAnswer(false);
     if (currentQuestion < data.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      alert("Quiz finished! Your score is: " + score);
+      alert("Quiz finished! Your score is: " + updatedScore);
       resetQuiz();
     }
   };
