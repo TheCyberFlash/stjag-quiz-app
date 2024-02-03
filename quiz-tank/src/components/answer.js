@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-const Answer = ({ text, onSelect, isCorrect }) => {
+const Answer = ({ text, onSelect, isCorrect, showCorrectAnswer }) => {
   const [selected, setSelected] = useState(false);
+  const [clickedNextQuestion, setClickedNextQuestion] = useState(false);
 
   const handleClick = () => {
     if (!selected) {
@@ -9,6 +10,13 @@ const Answer = ({ text, onSelect, isCorrect }) => {
       onSelect(isCorrect);
     }
   };
+
+  useEffect(() => {
+    if (clickedNextQuestion && showCorrectAnswer) {
+      setSelected(false);
+      setClickedNextQuestion(false);
+    }
+  }, [clickedNextQuestion, showCorrectAnswer]);
 
   return (
     <div
