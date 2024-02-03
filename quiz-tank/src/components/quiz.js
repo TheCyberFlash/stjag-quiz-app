@@ -9,15 +9,14 @@ const Quiz = () => {
   const [showCorrectAnswer, setShowCorrectAnswer] = useState(false);
 
   const handleAnswer = (isCorrect) => {
-    if (isCorrect) {
-      setScore(score + 1);
-    }
+    setScore((prevScore) => (isCorrect ? prevScore + 1 : prevScore));
     setShowCorrectAnswer(true);
+  
     setTimeout(() => {
       setShowCorrectAnswer(false);
       nextQuestion();
     }, 600);
-  };
+  }; 
 
   const nextQuestion = () => {
     setShowCorrectAnswer(false);
