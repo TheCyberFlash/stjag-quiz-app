@@ -7,9 +7,10 @@ const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showCorrectAnswer, setShowCorrectAnswer] = useState(false);
+  let updatedScore = score;
 
   const handleAnswer = (isCorrect) => {
-    const updatedScore = isCorrect ? score + 1 : score;
+    updatedScore = isCorrect ? score + 1 : score;
     setScore(updatedScore);
     console.log(updatedScore);
     setShowCorrectAnswer(true);
