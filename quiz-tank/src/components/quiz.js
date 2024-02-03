@@ -16,7 +16,7 @@ const Quiz = () => {
     setTimeout(() => {
       setShowCorrectAnswer(false);
       nextQuestion();
-    }, 600); 
+    }, 600);
   };
 
   const nextQuestion = () => {
