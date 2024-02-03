@@ -25,12 +25,17 @@ const Quiz = () => {
       setCurrentQuestion(currentQuestion + 1);
     } else {
       alert("Quiz finished! Your score is: " + score);
+      resetQuiz();
     }
   };
 
-  useEffect(() => {
+  const resetQuiz = () => {
     setCurrentQuestion(0);
     setScore(0);
+  };
+
+  useEffect(() => {
+    resetQuiz();
   }, []);
 
   return (
