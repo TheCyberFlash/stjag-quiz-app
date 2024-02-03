@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/stjag-quiz-app/static/css/main.106d04b9.css",
-    "main.js": "/stjag-quiz-app/static/js/main.9210b8d4.js",
+    "main.js": "/stjag-quiz-app/static/js/main.cb3ff38a.js",
     "static/js/787.334fbfd9.chunk.js": "/stjag-quiz-app/static/js/787.334fbfd9.chunk.js",
     "index.html": "/stjag-quiz-app/index.html",
     "main.106d04b9.css.map": "/stjag-quiz-app/static/css/main.106d04b9.css.map",
-    "main.9210b8d4.js.map": "/stjag-quiz-app/static/js/main.9210b8d4.js.map",
+    "main.cb3ff38a.js.map": "/stjag-quiz-app/static/js/main.cb3ff38a.js.map",
     "787.334fbfd9.chunk.js.map": "/stjag-quiz-app/static/js/787.334fbfd9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.106d04b9.css",
-    "static/js/main.9210b8d4.js"
+    "static/js/main.cb3ff38a.js"
   ]
 }
