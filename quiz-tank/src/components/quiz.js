@@ -20,6 +20,7 @@ const Quiz = () => {
   };
 
   const nextQuestion = () => {
+    setShowCorrectAnswer(false);
     if (currentQuestion < data.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
